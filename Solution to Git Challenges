@@ -1,0 +1,17 @@
+Solution to Challenges
+
+Challenge 1 — Two Function Conflict
+
+Create folder → git init → create team.py with greet() and farewell()
+git add . → git commit → create GitHub repo → git remote add origin <url> → git push -u origin main
+git checkout -b feature-update → modify both functions → git add . → git commit → git push -u origin feature-update
+git checkout main → modify same functions differently → git add . → git commit
+git merge feature-update → conflict appears → open team.py → remove markers → keep best of both
+git add . → git commit -m "resolved" → git push origin main
+
+Challenge 2 — Push Pull Vice Versa
+
+Create folder → git init → create notes.txt → git add . → git commit → create GitHub repo → git remote add origin <url> → git push -u origin main
+Go to GitHub → open notes.txt → click pencil icon → edit → commit directly on GitHub
+Back in local terminal → git pull origin main
+Open notes.txt locally → verify GitHub changes are now visible locally
